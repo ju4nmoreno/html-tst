@@ -1,0 +1,33 @@
+:root {
+  --background-page: #eee;
+  --colorH1: #999;
+  --colorArticle: #666;
+}
+body {
+  background-color: var(--background-page);
+  font-family: Tahoma;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: var(--colorH1);
+}
+
+article {
+  align-items: center;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  color: var(--colorArticle);
+  margin-block: 2rem;
+  padding: 1rem;
+}
+
+/* media queries Range Syntax */
+@media (680px <= width <= 1900px) {
+  body {
+    --background-page: black;
+    --colorH1: red;
+    --colorArticle: white;
+  }
+}

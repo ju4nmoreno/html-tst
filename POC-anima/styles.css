@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Circular Spotify Text';
+    src: url('CircularSpotifyTxT-Bold.woff');
+}
+html,
+body {
+    font-family: Circular Spotify Text;
+    height: 5000px;
+    color: #4100f5;
+    /* overflow: hidden; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cdf564;
+}
+
+h2 {
+    font-size: 14.3vw;
+    line-height: 19.39vw;
+    margin: 0;
+    letter-spacing: -0.8vw;
+}
+
+.text-wrapper {
+    position: absolute;
+    z-index: 2;
+}
+
+.text1 {
+    top: calc(50% - 19.38vw);
+    left: -500px;
+}
+
+.text2 {
+    bottom: calc(50% - 19.38vw);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+img {
+    image-rendering: auto;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    transform-origin: bottom;
+}
+
+picture {
+    display: block;
+    height: 100%;
+    height: 50vw;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    width: 50vw;
+}
+
+picture:nth-child(2) {
+    top: -2px;
+}
+
+.second-image {
+    transform: rotateZ(180deg) rotateY(180deg);
+}
+
+.wrapper-images {
+    top: -25vw;
+    z-index: 1;
+    position: absolute;
+}
+
+.wrapper-ele {
+    height: 50vw;
+    left: calc(50% - 25vw);
+    position: absolute;
+    top: calc(50% - 25vw);
+    width: 50vw;
+}
+
+.card {
+    height: 50vw;
+    transform: rotate(135deg) scale(1);
+    transition: all 0.2s;
+    width: 50vw;
+    transform-origin: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gradient {
+    background: linear-gradient(
+        45deg,
+        #4222f1 0%,
+        #a1c3d1 20.75%,
+        #9ef0e1 39.71%,
+        #f9e544 59.48%,
+        #fd483b 78.93%,
+        #000000 100%
+    );
+}
+.blue {
+    background-color: #4100f5;
+}

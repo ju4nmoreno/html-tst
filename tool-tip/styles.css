@@ -1,0 +1,22 @@
+tool-tip {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 10px black;
+  top: 100%;
+  left: 12%;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+:has(> tool-tip) {
+  position: relative;
+}
+
+:has(> tool-tip):hover tool-tip {
+  opacity: 1;
+}
